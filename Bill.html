@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Input value</title>
+        <script type="text/javascript">
+            function show()
+            {
+                var qty=document.getElementById("qty").value;
+                var rate=document.getElementById("rate").value;
+                 alert(qty);
+                 alert(rate);
+                 var total=Number(qty)*Number(rate);
+                 document.getElementById("h").innerHTML="Total bill ="+total;
+            }
+            function initialize()
+            {
+                document.getElementById("qty").value=0;
+                document.getElementById("rate").value=0;
+
+            }
+        </script>
+        <style>
+          input[type='text']
+          { 
+            height:40px;
+            width:400px;
+            border-radius:10px;
+          }
+        </style>
+    </head>
+    <body onload="initialize()">
+        <input type='text' name='first' value='' placeholder='Enter quantity' id="qty" /><br><br>
+        <input type='text' name='second' value='' placeholder='Enter rate' id="rate" onkeyup="show()" /><br><br>
+        <h1 id="h">Total Bill=</h1>
+    </body>
+</html>
