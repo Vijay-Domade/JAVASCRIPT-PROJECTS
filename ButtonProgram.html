@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Fourth</title>
+        <link rel="stylesheet" href="p2.css">
+    </head>
+    <body>
+    
+        
+        <button onclick="createTextBox()">Create Text Box</button>
+        <div id="box"></div>
+    
+        <script>
+            function createTextBox()
+             {    
+                var textBox = document.createElement("input");
+                textBox.setAttribute("type", "text");
+                textBox.setAttribute("placeholder", "New Text Box");
+                textBox.setAttribute("class", "textbox");    
+                var container = document.getElementById("box");
+                box.appendChild(textBox);
+            }
+        </script>
+    </body>
+    </html>

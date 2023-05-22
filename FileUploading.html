@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>File Uploading</title>
+        <style>
+            input[type='text']
+            {
+                width:400px;
+                height:40px;
+            }
+        </style>
+        <script type='text/javascript'>
+            function createFileControl()
+            {
+                var inputControl=document.createElement("input");
+                inputControl.setAttribute("type","file");
+                var newLine=document.createElement("br");
+                var newLine1=document.createElement("br");
+                var divElement=document.getElementById("d");
+                divElement.append(newLine);
+                divElement.append(newLine1);
+                divElement.append(inputControl);
+            }
+        </script>
+    </head>
+    <body>
+       <div id="d">
+       <input type='text name' name='name' value='' placeholder='Enter Name' /><br><br>
+       <input type='text name' name='email' value='' placeholder='Enter Email' /><br><br>
+       <input type='text' name='contact' value='' placeholder='Enter Contact' /><br><br>
+       <input type='text' name='username' value='' placeholder='Enter Username' /><br><br>
+       <input type='text' name='password' value='' placeholder='Enter Password' /><br><br>
+       <input type='button' name='f' value='+' style='width:80px; height:80px;border-radius:50%; background-color:red; color:white; border:2px solid white; font-size:24px;' onclick="createFileControl()" />
+      
+       </div>
+    </body>
+</html>

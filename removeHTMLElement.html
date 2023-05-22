@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Remove Html element</title>
+         <style>
+            input{
+                width:400px;
+                height:40px;
+            }
+            div{
+                width:400px;
+                height:40px;
+                background-color:red;
+            }
+          </style>
+          <script type='text/javascript'>
+            function removeDiv()
+            {
+                var div=document.getElementById("d");
+                div.remove();
+            }
+          </script>
+    </head>
+    <body>
+      <input type='button' name='s' value='Remove Div' onclick="removeDiv()" /><br><br>
+      <div id="d">
+      </div>
+    </body>
+</html>

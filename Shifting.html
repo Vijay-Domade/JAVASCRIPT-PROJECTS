@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Shift</title>
+        <script type='text/javascript'>
+            show=function()
+            {
+                var cityNames=new Array('pune','nashik','mumbai','goa');
+                alert("Before shifting "+cityNames);
+                delete cityNames[0];
+                alert("After shifting"+cityNames);
+            }
+            </script>
+    </head>
+    <body>
+        <input type='submit' name='s' value='show message' onclick="show()">
+    </body>
+</html>

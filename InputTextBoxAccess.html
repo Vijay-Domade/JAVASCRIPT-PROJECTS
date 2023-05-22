@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Access Textbox value</title>
+        <script type='text/javascript'>
+            function show()
+            {
+                var textControl=document.getElementById("txt");
+                var val=textControl.value;
+                alert(val);
+            }
+        </script>
+        <style>
+            input
+            {
+                width:400px;
+                height:40px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type='button' name='s' value='Access Textbox value' onclick="show()" /><br><br>
+        <input type='text' name='n' value='' id='txt'/>
+    </body>
+</html>

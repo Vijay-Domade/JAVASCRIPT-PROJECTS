@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>I can create run time html element</title>
+        <script type='text/javascript'>
+            function createMyElement()
+            {
+                var runtimePara=document.createElement("p");
+                var newTextNode=document.createTextNode("Hey I created at runtime by javascript");
+                runtimePara.append(newTextNode);
+                var divParent=document.getElementById("d");
+                runtimePara.style.color="white";
+                runtimePara.style.fontsize="24px";
+                runtimePara.style.align="center";
+                runtimePara.style.position="absolute";
+                runtimePara.style.left="200px";
+                runtimePara.style.top="100px";
+                runtimePara.style.border="2px solid white";
+                runtimePara.style.padding="30px";
+                runtimePara.style.width="400px";
+                runtimePara.style.outline="5px solid gray";
+                runtimePara.style.outlineOffset="15px";
+                runtimePara.style.borderRadius="20px";
+                divParent.append(runtimePara);
+                
+            }
+        </script>
+        <style>
+            div
+               {
+                position:relative;
+                width:800px;
+                height:300px;
+                padding:10px;
+                background-color:red;
+               }
+        </style>
+    </head>
+    <body>
+        <input type='button' name='s' value='Create Paragraph' style='width:400px;height:40px;' onclick="createMyElement()" /><br><br>
+        <div id="d">
+        </div>
+    </body>
+</html>
